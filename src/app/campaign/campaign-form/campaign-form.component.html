@@ -1,0 +1,18 @@
+<div class="form-container">
+   <h2>Yeni Kampanya Oluştur</h2>
+ 
+   <form (ngSubmit)="saveCampaign()" #form="ngForm">
+     <label for="title">Kampanya Başlığı</label>
+     <input type="text" id="title" name="title" [(ngModel)]="title" required />
+ 
+     <label for="description">Kampanya Açıklaması</label>
+     <textarea id="description" name="description" [(ngModel)]="description" required></textarea>
+ 
+     <button type="submit" [disabled]="!form.valid">Kaydet</button>
+   </form>
+ 
+   <div class="success" *ngIf="showSuccessMessage">
+     Kampanya başarılı bir şekilde eklenmiştir!
+   </div>
+ </div>
+ 

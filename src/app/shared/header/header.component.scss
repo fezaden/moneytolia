@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #20232a;
+  color: #fff;
+
+  img {
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      height: 30px;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .card, .form-container, .modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}

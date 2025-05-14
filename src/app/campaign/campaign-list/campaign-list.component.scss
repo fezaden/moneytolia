@@ -1,0 +1,75 @@
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  .actions {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    button {
+      flex: none;
+      min-width: 90px;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .card, .form-container, .modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}

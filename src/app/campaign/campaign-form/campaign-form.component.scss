@@ -1,0 +1,44 @@
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  label {
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .success {
+    margin-top: 15px;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 6px;
+    color: #155724;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .card, .form-container, .modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,47 @@
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  height: 100vh;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+
+        &.active {
+          color: #007acc;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card, .form-container, .modal-content {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}
